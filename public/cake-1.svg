@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900' viewBox='0 0 1200 900'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#ffe4e6'/>
+      <stop offset='100%' stop-color='#ffedd5'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='900' fill='url(#g)'/>
+  <circle cx='250' cy='220' r='130' fill='rgba(255,255,255,0.45)'/>
+  <circle cx='930' cy='680' r='180' fill='rgba(255,255,255,0.35)'/>
+  <rect x='180' y='260' rx='45' ry='45' width='840' height='420' fill='rgba(255,255,255,0.65)'/>
+  <text x='600' y='435' text-anchor='middle' font-size='68' font-family='Arial, sans-serif' fill='#6b4f3a'>Birthday Cakes</text>
+  <text x='600' y='510' text-anchor='middle' font-size='34' font-family='Arial, sans-serif' fill='#6b4f3a'>Fairy Cakes Placeholder</text>
+</svg>
