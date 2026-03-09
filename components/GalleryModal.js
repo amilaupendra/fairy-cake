@@ -20,7 +20,7 @@ export default function GalleryModal({ item, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            className="rounded-full bg-rose-600 px-4 py-2 text-sm font-semibold text-white transition-all hover:scale-105"
+            className="rounded-full bg-green-600 px-4 py-2 text-sm font-semibold text-white transition-all hover:scale-105"
           >
             Close
           </button>

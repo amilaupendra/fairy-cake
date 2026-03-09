@@ -12,7 +12,7 @@ export default function AboutPage() {
     <div className="space-y-8">
       <section className="section-card grid items-center gap-6 md:grid-cols-2">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-rose-500">About Fairy Cakes</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">About Fairy Cakes</p>
           <h1 className="text-4xl font-bold">Handmade Cakes for Every Sweet Moment.</h1>
           <p className="mt-4 text-stone-700 dark:text-stone-200">
             Fairy Cakes is a warm mom-and-pop style bakery based in Perth, Western Australia. We create cakes with
@@ -29,7 +29,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-orange-500">What Customers Say</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-green-500">What Customers Say</p>
         <h2 className="text-3xl font-bold">Loved Across Perth</h2>
         <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial) => (

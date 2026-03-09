@@ -4,22 +4,8 @@ import { useEffect } from 'react';
 import { useOrder } from '@/context/OrderContext';
 import generateOrderId from '@/utils/generateOrderId';
 
-const categories = [
-  'Birthday Cakes',
-  'Wedding Cakes',
-  'Kids Theme Cakes',
-  'Cupcakes',
-  'Chocolate Cakes',
-  'Fruit Cakes',
-  'Custom Design Cakes',
-  'Special Occasion Cakes'
-];
-
-const sizes = ['6 inch', '8 inch', '10 inch', '2 Tier', '3 Tier'];
-const flavors = ['Vanilla', 'Chocolate', 'Red Velvet', 'Strawberry', 'Black Forest', 'Lemon'];
-
 export default function OrderForm() {
-  const { orderId, setOrderId, formData, updateFormData } = useOrder();
+  const { orderId, setOrderId, formData, updateFormData, cartItems, cartTotal } = useOrder();
 
   useEffect(() => {
     if (!orderId) {
@@ -41,35 +27,59 @@ export default function OrderForm() {
       `Customer Name: ${formData.customerName}`,
       `Email: ${formData.email}`,
       `Phone Number: ${formData.phone}`,
-      `Cake Category: ${formData.cakeCategory}`,
-      `Cake Size: ${formData.cakeSize}`,
-      `Flavor: ${formData.flavor}`,
       `Message on Cake: ${formData.messageOnCake}`,
       `Pickup or Delivery: ${formData.fulfillment}`,
       `Delivery Address: ${formData.fulfillment === 'Delivery' ? formData.deliveryAddress : 'N/A'}`,
       `Pickup Date: ${formData.pickupDate}`,
       `Reference Image (UI only): ${formData.referenceImage || 'Not provided'}`,
+      `Cart Summary: ${
+        cartItems.length
+          ? cartItems
+              .map(
+                (item) =>
+                  `${item.title} x ${item.quantity} @ ${item.price} [size: ${item.customization?.size || 'N/A'}, color: ${
+                    item.customization?.color || 'N/A'
+                  }, flavor: ${item.customization?.flavor || 'N/A'}, shape: ${item.customization?.shape || 'N/A'}, note: ${
+                    item.customization?.note || 'N/A'
+                  }]`
+              )
+              .join(' | ')
+          : 'No cart items'
+      }`,
+      `Estimated Cart Total: $${cartTotal.toFixed(2)}`,
       `Special Instructions: ${formData.specialInstructions || 'None'}`
     ].join('\n');
 
-    window.location.href = `mailto:fairycakes@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:amilaupendra5@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
     <section className="section-card">
-      <div className="mb-6 rounded-xl bg-rose-100 p-4 dark:bg-rose-900/30">
-        <p className="text-sm font-semibold uppercase tracking-wide text-rose-600">Order ID</p>
+      <div className="mb-6 rounded-xl bg-yellow-100 p-4 dark:bg-green-900/30">
+        <p className="text-sm font-semibold uppercase tracking-wide text-green-600">Order ID</p>
         <p className="text-2xl font-bold">{orderId || 'Generating...'}</p>
       </div>
+
+      {cartItems.length > 0 ? (
+        <div className="mb-6 rounded-xl border border-yellow-200 bg-white p-4 dark:border-stone-600 dark:bg-stone-800">
+          <p className="text-sm font-semibold uppercase tracking-wide text-green-600">Cart Imported</p>
+          <ul className="mt-2 space-y-1 text-sm">
+            {cartItems.map((item) => (
+              <li key={item.cartKey}>
+                {item.title} x {item.quantity} - {item.price} | size: {item.customization?.size || 'N/A'} | color:{' '}
+                {item.customization?.color || 'N/A'} | flavor: {item.customization?.flavor || 'N/A'} | shape:{' '}
+                {item.customization?.shape || 'N/A'} | note: {item.customization?.note || 'N/A'}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 font-semibold text-green-700">Estimated Total: ${cartTotal.toFixed(2)}</p>
+        </div>
+      ) : null}
 
       <form onSubmit={handleSubmit} className="grid gap-4 md:grid-cols-2">
         <Field label="Customer Name" name="customerName" value={formData.customerName} onChange={handleChange} required />
         <Field label="Email" name="email" type="email" value={formData.email} onChange={handleChange} required />
         <Field label="Phone Number" name="phone" value={formData.phone} onChange={handleChange} required />
-
-        <SelectField label="Cake Category" name="cakeCategory" value={formData.cakeCategory} onChange={handleChange} options={categories} />
-        <SelectField label="Cake Size" name="cakeSize" value={formData.cakeSize} onChange={handleChange} options={sizes} />
-        <SelectField label="Flavor" name="flavor" value={formData.flavor} onChange={handleChange} options={flavors} />
 
         <Field
           label="Message on Cake"
@@ -120,7 +130,7 @@ export default function OrderForm() {
             name="specialInstructions"
             value={formData.specialInstructions}
             onChange={handleChange}
-            className="w-full rounded-xl border border-rose-200 bg-white px-4 py-2 shadow-sm outline-none transition focus:border-rose-400 dark:border-stone-600 dark:bg-stone-800"
+            className="w-full rounded-xl border border-yellow-200 bg-white px-4 py-2 shadow-sm outline-none transition focus:border-green-400 dark:border-stone-600 dark:bg-stone-800"
             rows={4}
           />
         </div>
@@ -128,7 +138,7 @@ export default function OrderForm() {
         <div className="md:col-span-2">
           <button
             type="submit"
-            className="rounded-full bg-rose-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-rose-700"
+            className="rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-700"
           >
             Submit Order via Email
           </button>
@@ -152,7 +162,7 @@ function Field({ label, name, value, onChange, required, type = 'text', placehol
         onChange={onChange}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-rose-200 bg-white px-4 py-2 shadow-sm outline-none transition focus:border-rose-400 dark:border-stone-600 dark:bg-stone-800"
+        className="w-full rounded-xl border border-yellow-200 bg-white px-4 py-2 shadow-sm outline-none transition focus:border-green-400 dark:border-stone-600 dark:bg-stone-800"
       />
     </div>
   );
@@ -169,7 +179,7 @@ function SelectField({ label, name, value, onChange, options }) {
         name={name}
         value={value}
         onChange={onChange}
-        className="w-full rounded-xl border border-rose-200 bg-white px-4 py-2 shadow-sm outline-none transition focus:border-rose-400 dark:border-stone-600 dark:bg-stone-800"
+        className="w-full rounded-xl border border-yellow-200 bg-white px-4 py-2 shadow-sm outline-none transition focus:border-green-400 dark:border-stone-600 dark:bg-stone-800"
       >
         {options.map((option) => (
           <option key={option} value={option}>

@@ -13,7 +13,7 @@ export default function GalleryGrid({ items, onSelect }) {
           <Image src={item.src} alt={item.title} width={500} height={500} className="h-60 w-full object-cover" />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-3">
             <p className="text-sm font-semibold text-white">{item.title}</p>
-            <p className="text-xs text-rose-100">{item.category}</p>
+            <p className="text-xs text-yellow-100">{item.category}</p>
           </div>
         </button>
       ))}

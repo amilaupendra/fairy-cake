@@ -12,15 +12,15 @@ module.exports = {
     extend: {
       colors: {
         fairy: {
-          cream: '#fff7ed',
-          blush: '#ffe4e6',
-          peach: '#ffedd5',
-          mint: '#ecfdf5',
-          cocoa: '#6b4f3a'
+          white: '#ffffff',
+          lemon: '#fef9c3',
+          sunshine: '#fde047',
+          meadow: '#dcfce7',
+          leaf: '#16a34a'
         }
       },
       boxShadow: {
-        fairy: '0 10px 30px rgba(107, 79, 58, 0.12)'
+        fairy: '0 10px 30px rgba(34, 197, 94, 0.14)'
       }
     }
   },
