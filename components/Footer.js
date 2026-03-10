@@ -1,27 +1,37 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="mt-10 border-t border-yellow-100 bg-yellow-100/80 dark:border-stone-700 dark:bg-stone-950">
+    <footer className="mt-10 border-t border-pink-100 bg-pink-100/80 dark:border-stone-700 dark:bg-stone-950">
       <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div>
-          <h3 className="text-xl font-bold text-green-700 dark:text-yellow-300">Fairy Cakes</h3>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/images/logo.png"
+              alt="Fairy Cakes Logo"
+              width={48}
+              height={48}
+              className="h-12 w-12 object-contain"
+            />
+            <h3 className="text-xl font-bold text-rose-600 dark:text-pink-300">Fairy Cakes</h3>
+          </div>
           <p className="mt-2 text-sm text-stone-700 dark:text-stone-300">Handmade Cakes for Every Sweet Moment.</p>
         </div>
 
         <div>
           <h4 className="font-semibold">Quick Links</h4>
           <div className="mt-2 space-y-1 text-sm">
-            <Link className="block hover:text-green-600" href="/">
+            <Link className="block hover:text-rose-500" href="/">
               Home
             </Link>
-            <Link className="block hover:text-green-600" href="/menu">
+            <Link className="block hover:text-rose-500" href="/menu">
               Menu
             </Link>
-            <Link className="block hover:text-green-600" href="/gallery">
+            <Link className="block hover:text-rose-500" href="/gallery">
               Gallery
             </Link>
-            <Link className="block hover:text-green-600" href="/order">
+            <Link className="block hover:text-rose-500" href="/order">
               Order
             </Link>
           </div>
@@ -32,7 +42,7 @@ export default function Footer() {
           <div className="mt-2 space-y-1 text-sm text-stone-700 dark:text-stone-300">
             <p>0422329792</p>
             <p>0489875673</p>
-            <a className="hover:text-green-600" href="mailto:fairycakes@gmail.com">
+            <a className="hover:text-rose-500" href="mailto:fairycakes@gmail.com">
               fairycakes@gmail.com
             </a>
             <p>U 8, 19 Bradford Pl, Marangaroo, WA</p>
@@ -57,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-yellow-200 py-4 text-center text-sm text-stone-600 dark:border-stone-700 dark:text-stone-300">
+      <div className="border-t border-pink-200 py-4 text-center text-sm text-stone-600 dark:border-stone-700 dark:text-stone-300">
         Copyright {new Date().getFullYear()} Fairy Cakes. All rights reserved.
       </div>
     </footer>

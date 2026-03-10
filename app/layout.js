@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${nunito.variable} ${playfair.variable} bg-gradient-to-b from-yellow-50 via-white to-green-50 text-stone-800 dark:bg-stone-900 dark:text-stone-100`}
+        className={`${nunito.variable} ${playfair.variable} bg-gradient-to-b from-pink-50 via-white to-rose-50 text-stone-800 dark:bg-stone-900 dark:text-stone-100`}
       >
         <Providers>
           <div className="flex min-h-screen flex-col">

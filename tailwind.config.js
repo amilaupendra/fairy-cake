@@ -13,14 +13,17 @@ module.exports = {
       colors: {
         fairy: {
           white: '#ffffff',
-          lemon: '#fef9c3',
-          sunshine: '#fde047',
-          meadow: '#dcfce7',
-          leaf: '#16a34a'
+          blush: '#fce7f3',
+          petal: '#fdf2f8',
+          rose: '#f43f5e',
+          roseDark: '#e11d48',
+          gold: '#f59e0b',
+          goldLight: '#fef3c7',
+          cream: '#fff7ed'
         }
       },
       boxShadow: {
-        fairy: '0 10px 30px rgba(34, 197, 94, 0.14)'
+        fairy: '0 10px 30px rgba(244, 63, 94, 0.14)'
       }
     }
   },

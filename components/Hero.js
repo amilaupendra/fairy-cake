@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-yellow-100 via-green-100 to-green-50 md:grid-cols-2 md:p-10">
+    <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2 md:p-10">
       <div className="fade-in-up">
-        <p className="text-sm font-semibold tracking-wide text-green-600 uppercase">
+        <p className="text-sm font-semibold tracking-wide text-rose-500 uppercase">
           Welcome to Fairy Cakes
         </p>
         <h1 className="mt-2 text-4xl font-bold leading-tight sm:text-5xl">
@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <Link
           href="/order"
-          className="inline-flex px-6 py-3 mt-6 font-semibold text-white transition-all duration-300 bg-green-600 rounded-full hover:scale-105 hover:bg-green-700"
+          className="inline-flex px-6 py-3 mt-6 font-semibold text-white transition-all duration-300 bg-rose-500 rounded-full hover:scale-105 hover:bg-rose-600"
         >
           Order a Cake
         </Link>

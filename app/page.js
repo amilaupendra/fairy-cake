@@ -44,10 +44,10 @@ export default function HomePage() {
       <section className="section-card">
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Featured Cakes</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Featured Cakes</p>
             <h2 className="text-3xl font-bold">Fresh Favorites from Our Bakery</h2>
           </div>
-          <Link href="/menu" className="text-sm font-semibold text-green-600 hover:text-green-700">
+          <Link href="/menu" className="text-sm font-semibold text-rose-500 hover:text-rose-600">
             View Full Menu
           </Link>
         </div>
@@ -60,7 +60,7 @@ export default function HomePage() {
 
       <section>
         <div className="mb-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-green-600">Cake Categories</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-rose-500">Cake Categories</p>
           <h2 className="text-3xl font-bold">Something Sweet for Every Occasion</h2>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -72,7 +72,7 @@ export default function HomePage() {
 
       <section className="section-card">
         <div className="mb-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-green-500">Happy Customers</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-rose-500">Happy Customers</p>
           <h2 className="text-3xl font-bold">Testimonials</h2>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -85,10 +85,10 @@ export default function HomePage() {
       <section>
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Gallery Preview</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Gallery Preview</p>
             <h2 className="text-3xl font-bold">Handmade Beauty in Every Slice</h2>
           </div>
-          <Link href="/gallery" className="text-sm font-semibold text-green-600 hover:text-green-700">
+          <Link href="/gallery" className="text-sm font-semibold text-rose-500 hover:text-rose-600">
             Explore Gallery
           </Link>
         </div>
@@ -104,9 +104,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-card grid items-center gap-6 bg-gradient-to-r from-yellow-100 via-green-100 to-green-50 md:grid-cols-2">
+      <section className="section-card grid items-center gap-6 bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-green-600">Instagram Preview</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-rose-500">Instagram Preview</p>
           <h2 className="mt-1 text-3xl font-bold">@fairycakes</h2>
           <p className="mt-3 text-stone-700 dark:text-stone-200">
             Follow our latest cake creations, decorating behind-the-scenes, and customer celebration highlights.
@@ -119,14 +119,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="rounded-2xl bg-yellow-200 p-8 text-center shadow-lg dark:bg-green-900/40">
+      <section className="rounded-2xl bg-rose-100 p-8 text-center shadow-lg dark:bg-rose-900/40">
         <h2 className="text-3xl font-bold">Ready to Plan Your Cake?</h2>
         <p className="mx-auto mt-3 max-w-2xl text-stone-700 dark:text-stone-200">
           Tell us about your event and we will craft a handmade cake designed for your sweet moment.
         </p>
         <Link
           href="/order"
-          className="mt-5 inline-flex rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-700"
+          className="mt-5 inline-flex rounded-full bg-rose-500 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-rose-600"
         >
           Order a Cake
         </Link>

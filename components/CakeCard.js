@@ -56,25 +56,25 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
       <div className="space-y-2 p-4">
         <h3 className="text-xl font-bold">{cake.title}</h3>
         <p className="text-sm text-stone-600 dark:text-stone-300">{cake.description}</p>
-        {cake.price ? <p className="font-semibold text-green-600">Price: {cake.price}</p> : null}
+        {cake.price ? <p className="font-semibold text-rose-500">Price: {cake.price}</p> : null}
         {cake.size ? <p className="text-sm font-medium text-stone-700 dark:text-stone-200">Size: {cake.size}</p> : null}
         {showCartActions ? (
           <div className="mt-3 flex items-center gap-2" onClick={(event) => event.stopPropagation()}>
             <button
               type="button"
               onClick={onRemove}
-              className="rounded-full border border-yellow-300 px-3 py-1 text-sm font-semibold text-stone-700 transition hover:bg-yellow-100 dark:border-stone-600 dark:text-stone-200 dark:hover:bg-stone-700"
+              className="rounded-full border border-pink-200 px-3 py-1 text-sm font-semibold text-stone-700 transition hover:bg-pink-50 dark:border-stone-600 dark:text-stone-200 dark:hover:bg-stone-700"
             >
               Remove
             </button>
             <button
               type="button"
               onClick={openCustomizeModal}
-              className="rounded-full bg-green-600 px-3 py-1 text-sm font-semibold text-white transition hover:bg-green-700"
+              className="rounded-full bg-rose-500 px-3 py-1 text-sm font-semibold text-white transition hover:bg-rose-600"
             >
               Add
             </button>
-            <span className="ml-auto rounded-full bg-yellow-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-stone-700 dark:text-yellow-300">
+            <span className="ml-auto rounded-full bg-pink-100 px-3 py-1 text-xs font-bold text-rose-600 dark:bg-stone-700 dark:text-pink-300">
               In Cart: {quantity}
             </span>
           </div>
@@ -105,7 +105,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                   type="button"
                   onClick={() => setActiveIndex(index)}
                   className={`overflow-hidden rounded-lg border-2 ${
-                    activeIndex === index ? 'border-green-600' : 'border-transparent'
+                    activeIndex === index ? 'border-rose-500' : 'border-transparent'
                   }`}
                 >
                   <Image src={src} alt={`Thumbnail ${index + 1}`} width={120} height={90} className="h-16 w-24 object-cover" />
@@ -118,7 +118,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full bg-green-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-700"
+                className="rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-rose-600"
               >
                 Close
               </button>
@@ -141,7 +141,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                 <input
                   value={customization.size}
                   onChange={(event) => setCustomization((prev) => ({ ...prev, size: event.target.value }))}
-                  className="w-full rounded-xl border border-yellow-200 px-3 py-2 outline-none focus:border-green-400"
+                  className="w-full rounded-xl border border-pink-200 px-3 py-2 outline-none focus:border-rose-400"
                 />
               </Field>
 
@@ -149,7 +149,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                 <input
                   value={customization.color}
                   onChange={(event) => setCustomization((prev) => ({ ...prev, color: event.target.value }))}
-                  className="w-full rounded-xl border border-yellow-200 px-3 py-2 outline-none focus:border-green-400"
+                  className="w-full rounded-xl border border-pink-200 px-3 py-2 outline-none focus:border-rose-400"
                 />
               </Field>
 
@@ -157,7 +157,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                 <select
                   value={customization.flavor}
                   onChange={(event) => setCustomization((prev) => ({ ...prev, flavor: event.target.value }))}
-                  className="w-full rounded-xl border border-yellow-200 px-3 py-2 outline-none focus:border-green-400"
+                  className="w-full rounded-xl border border-pink-200 px-3 py-2 outline-none focus:border-rose-400"
                 >
                   {['Vanilla', 'Chocolate', 'Red Velvet', 'Strawberry', 'Black Forest', 'Lemon'].map((flavor) => (
                     <option key={flavor} value={flavor}>
@@ -171,7 +171,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                 <select
                   value={customization.shape}
                   onChange={(event) => setCustomization((prev) => ({ ...prev, shape: event.target.value }))}
-                  className="w-full rounded-xl border border-yellow-200 px-3 py-2 outline-none focus:border-green-400"
+                  className="w-full rounded-xl border border-pink-200 px-3 py-2 outline-none focus:border-rose-400"
                 >
                   {['Round', 'Square', 'Heart', 'Rectangle'].map((shape) => (
                     <option key={shape} value={shape}>
@@ -186,7 +186,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                   value={customization.note}
                   onChange={(event) => setCustomization((prev) => ({ ...prev, note: event.target.value }))}
                   rows={3}
-                  className="w-full rounded-xl border border-yellow-200 px-3 py-2 outline-none focus:border-green-400"
+                  className="w-full rounded-xl border border-pink-200 px-3 py-2 outline-none focus:border-rose-400"
                 />
               </Field>
             </div>
@@ -195,7 +195,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
               <button
                 type="button"
                 onClick={() => setIsCustomizeOpen(false)}
-                className="rounded-full border border-yellow-300 px-4 py-2 text-sm font-semibold hover:bg-yellow-100"
+                className="rounded-full border border-pink-200 px-4 py-2 text-sm font-semibold hover:bg-pink-50"
               >
                 Cancel
               </button>
@@ -205,7 +205,7 @@ export default function CakeCard({ cake, showCartActions = false, quantity = 0, 
                   onAdd?.(customization);
                   setIsCustomizeOpen(false);
                 }}
-                className="rounded-full bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700"
+                className="rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white hover:bg-rose-600"
               >
                 Add to Cart
               </button>
