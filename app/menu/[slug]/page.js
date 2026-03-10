@@ -33,7 +33,7 @@ export default function MenuCategoryPage({ params }) {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Menu Category</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Menu Category</p>
         <h1 className="text-4xl font-bold">{category.title}</h1>
         <p className="mt-3 max-w-3xl text-stone-700 dark:text-stone-200">{category.description}</p>
       </section>

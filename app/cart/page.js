@@ -17,7 +17,7 @@ export default function CartPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Your Cart</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Your Cart</p>
         <h1 className="text-4xl font-bold">Selected Cakes</h1>
         <p className="mt-3 text-stone-700 dark:text-stone-200">Review your cake selections before proceeding to order.</p>
       </section>
@@ -27,7 +27,7 @@ export default function CartPage() {
           <p className="text-lg font-semibold">Your cart is empty.</p>
           <Link
             href="/menu"
-            className="mt-4 inline-flex rounded-full bg-green-600 px-5 py-2 font-semibold text-white transition hover:bg-green-700"
+            className="mt-4 inline-flex rounded-full bg-rose-500 px-5 py-2 font-semibold text-white transition hover:bg-rose-600"
           >
             Browse Menu
           </Link>
@@ -50,13 +50,13 @@ export default function CartPage() {
                   <p className="text-sm">Flavor: {item.customization?.flavor || 'N/A'}</p>
                   <p className="text-sm">Shape: {item.customization?.shape || 'N/A'}</p>
                   <p className="text-sm">Note: {item.customization?.note || 'N/A'}</p>
-                  <p className="font-semibold text-green-600">Price: {item.price}</p>
+                  <p className="font-semibold text-rose-500">Price: {item.price}</p>
                 </div>
                 <div className="flex items-center gap-2 self-center">
                   <button
                     type="button"
                     onClick={() => removeCartItem(item.cartKey)}
-                    className="rounded-full border border-yellow-300 px-3 py-1 text-sm font-semibold hover:bg-yellow-100"
+                    className="rounded-full border border-pink-200 px-3 py-1 text-sm font-semibold hover:bg-pink-50"
                   >
                     -
                   </button>
@@ -64,7 +64,7 @@ export default function CartPage() {
                   <button
                     type="button"
                     onClick={() => addToCart(item)}
-                    className="rounded-full bg-green-600 px-3 py-1 text-sm font-semibold text-white hover:bg-green-700"
+                    className="rounded-full bg-rose-500 px-3 py-1 text-sm font-semibold text-white hover:bg-rose-600"
                   >
                     +
                   </button>
@@ -76,12 +76,12 @@ export default function CartPage() {
           <section className="section-card flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-sm text-stone-600 dark:text-stone-300">Estimated Total</p>
-              <p className="text-3xl font-bold text-green-700">${cartTotal.toFixed(2)}</p>
+              <p className="text-3xl font-bold text-rose-600">${cartTotal.toFixed(2)}</p>
             </div>
             <button
               type="button"
               onClick={handleContinue}
-              className="rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-700"
+              className="rounded-full bg-rose-500 px-6 py-3 font-semibold text-white transition hover:bg-rose-600"
             >
               Continue to Order Form
             </button>

@@ -10,7 +10,7 @@ export default function MenuPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Our Menu</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Our Menu</p>
         <h1 className="text-4xl font-bold">Handmade Cake Categories</h1>
         <p className="mt-3 max-w-3xl text-stone-700 dark:text-stone-200">
           Choose a category to view real cake samples with size, price, and cart actions.

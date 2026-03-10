@@ -35,7 +35,7 @@ export default function GalleryPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Gallery</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Gallery</p>
         <h1 className="text-4xl font-bold">Our Cake Creations</h1>
         <p className="mt-3 max-w-3xl text-stone-700 dark:text-stone-200">
           Browse our handmade designs and click any image to view a larger preview.
@@ -50,7 +50,7 @@ export default function GalleryPage() {
             onClick={() => setActiveFilter(filter)}
             className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 ${
               activeFilter === filter
-                ? 'bg-green-600 text-white shadow-lg'
+                ? 'bg-rose-500 text-white shadow-lg'
                 : 'bg-white text-stone-700 shadow hover:scale-105 dark:bg-stone-800 dark:text-stone-200'
             }`}
           >

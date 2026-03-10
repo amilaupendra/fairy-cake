@@ -9,7 +9,7 @@ export default function OrderPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Cake Orders</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Cake Orders</p>
         <h1 className="text-4xl font-bold">Place Your Cake Order</h1>
         <p className="mt-3 max-w-3xl text-stone-700 dark:text-stone-200">
           Complete the form below and your email app will open with all order details pre-filled.

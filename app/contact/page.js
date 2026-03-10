@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-yellow-500">Contact Us</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Contact Us</p>
         <h1 className="text-4xl font-bold">We Would Love to Hear From You</h1>
         <p className="mt-3 text-stone-700 dark:text-stone-200">
           Reach out for custom cake requests, event planning, and pickup or delivery inquiries.
@@ -22,7 +22,7 @@ export default function ContactPage() {
           </p>
           <p>
             <span className="font-semibold">Email:</span>{' '}
-            <a href="mailto:fairycakes@gmail.com" className="text-green-600 hover:underline">
+            <a href="mailto:fairycakes@gmail.com" className="text-rose-500 hover:underline">
               fairycakes@gmail.com
             </a>
           </p>
@@ -39,7 +39,7 @@ export default function ContactPage() {
 
         <div className="section-card">
           <h2 className="text-2xl font-bold">Location Map</h2>
-          <div className="mt-4 flex h-72 items-center justify-center rounded-2xl border-2 border-dashed border-yellow-300 bg-yellow-50 text-center text-stone-600 dark:border-green-700 dark:bg-stone-800 dark:text-stone-200">
+          <div className="mt-4 flex h-72 items-center justify-center rounded-2xl border-2 border-dashed border-pink-200 bg-pink-50 text-center text-stone-600 dark:border-rose-700 dark:bg-stone-800 dark:text-stone-200">
             Google Maps Placeholder
           </div>
         </div>
