@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2 md:p-10 max-h-screen overflow-hidden">
-      <div className="fade-in-up">
+    <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2 md:p-10 h-[calc(100vh-8rem)] overflow-hidden">
+      <div className="flex flex-col justify-center fade-in-up">
         <p className="text-sm font-semibold tracking-wide text-rose-500 uppercase">
           Welcome to Fairy Cakes
         </p>
@@ -17,19 +17,18 @@ export default function Hero() {
         </p>
         <Link
           href="/order"
-          className="inline-flex px-6 py-3 mt-6 font-semibold text-white transition-all duration-300 bg-rose-500 rounded-full hover:scale-105 hover:bg-rose-600"
+          className="inline-flex px-6 py-3 mt-6 font-semibold text-white transition-all duration-300 bg-rose-500 rounded-full hover:scale-105 hover:bg-rose-600 self-start"
         >
           Order a Cake
         </Link>
       </div>
 
-      <div className="relative overflow-hidden shadow-lg rounded-2xl fade-in-up stagger-2">
+      <div className="relative h-full min-h-[250px] overflow-hidden shadow-lg rounded-2xl fade-in-up stagger-2">
         <Image
           src="/images/hero/hero-bakery.JPG"
           alt="Bakery cake display"
-          width={900}
-          height={700}
-          className="object-cover w-full h-full"
+          fill
+          className="object-cover"
           priority
         />
       </div>
