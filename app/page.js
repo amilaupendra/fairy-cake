@@ -7,10 +7,10 @@ import TestimonialCard from '@/components/TestimonialCard';
 import testimonials from '@/data/testimonials';
 
 const categories = [
-  { title: 'Birthday Cakes', image: '/images/cakes/cake-1.svg', href: '/menu' },
-  { title: 'Wedding Cakes', image: '/images/cakes/cake-2.svg', href: '/menu' },
-  { title: 'Cupcakes', image: '/images/cakes/cake-3.svg', href: '/menu' },
-  { title: 'Custom Design Cakes', image: '/images/cakes/cake-4.svg', href: '/menu' }
+  { title: 'Birthday Cakes', image: '/images/cakes/cake-1.jpg', href: '/menu' },
+  { title: 'Wedding Cakes', image: '/images/cakes/cake-2.jpg', href: '/menu' },
+  { title: 'Cupcakes', image: '/images/cakes/cake-3.jpg', href: '/menu' },
+  { title: 'Custom Design Cakes', image: '/images/cakes/cake-4.jpg', href: '/menu' }
 ];
 
 const featured = [
@@ -18,19 +18,19 @@ const featured = [
     title: 'Blush Berry Celebration',
     description: 'Vanilla sponge, fresh cream, and berry compote.',
     price: '$85',
-    image: '/images/cakes/cake-5.svg'
+    image: '/images/cakes/cake-5.jpg'
   },
   {
     title: 'Classic Chocolate Delight',
     description: 'Rich chocolate layers with silky ganache finish.',
     price: '$78',
-    image: '/images/cakes/cake-6.svg'
+    image: '/images/cakes/cake-6.jpg'
   },
   {
     title: 'Mint Garden Wedding Cake',
     description: 'Elegant three-tier cake with handmade floral details.',
     price: '$240',
-    image: '/images/cakes/cake-7.svg'
+    image: '/images/cakes/cake-7.jpg'
   }
 ];
 

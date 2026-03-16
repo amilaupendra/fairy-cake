@@ -2,49 +2,49 @@ export const menuCategories = [
   {
     slug: 'birthday-cakes',
     title: 'Birthday Cakes',
-    image: '/images/cakes/cake-1.svg',
+    image: '/images/cakes/cake-1.jpg',
     description: 'Fun and vibrant cakes for every age.'
   },
   {
     slug: 'wedding-cakes',
     title: 'Wedding Cakes',
-    image: '/images/cakes/cake-2.svg',
+    image: '/images/cakes/cake-2.jpg',
     description: 'Elegant tiers made for your special day.'
   },
   {
     slug: 'kids-theme-cakes',
     title: 'Kids Theme Cakes',
-    image: '/images/cakes/cake-3.svg',
+    image: '/images/cakes/cake-3.jpg',
     description: 'Character and color-packed party cakes.'
   },
   {
     slug: 'cupcakes',
     title: 'Cupcakes',
-    image: '/images/cakes/cake-4.svg',
+    image: '/images/cakes/cake-4.jpg',
     description: 'Hand-piped cupcakes in assorted flavors.'
   },
   {
     slug: 'chocolate-cakes',
     title: 'Chocolate Cakes',
-    image: '/images/cakes/cake-5.svg',
+    image: '/images/cakes/cake-5.jpg',
     description: 'Rich cocoa cakes with smooth ganache.'
   },
   {
     slug: 'fruit-cakes',
     title: 'Fruit Cakes',
-    image: '/images/cakes/cake-6.svg',
+    image: '/images/cakes/cake-6.jpg',
     description: 'Light and fresh cakes with fruit layers.'
   },
   {
     slug: 'custom-design-cakes',
     title: 'Custom Design Cakes',
-    image: '/images/cakes/cake-7.svg',
+    image: '/images/cakes/cake-7.jpg',
     description: 'Custom creations tailored to your vision.'
   },
   {
     slug: 'special-occasion-cakes',
     title: 'Special Occasion Cakes',
-    image: '/images/cakes/cake-8.svg',
+    image: '/images/cakes/cake-8.jpg',
     description: 'Perfect cakes for milestones and holidays.'
   }
 ];
@@ -97,7 +97,7 @@ export const cakeSamplesByCategory = {
       id: 'wed-3',
       title: 'Mint Garden Tier Cake',
       description: 'Fresh mint tones and handcrafted sugar flowers.',
-      image: '/images/cakes/cake-7.svg',
+      image: '/images/cakes/cake-7.jpg',
       price: '$260',
       size: '3 tier'
     }
@@ -115,7 +115,7 @@ export const cakeSamplesByCategory = {
       id: 'kids-2',
       title: 'Superhero Action Cake',
       description: 'Bold comic inspired design with custom name badge.',
-      image: '/images/cakes/cake-3.svg',
+      image: '/images/cakes/cake-3.jpg',
       price: '$92',
       size: '10 inch'
     },
@@ -149,7 +149,7 @@ export const cakeSamplesByCategory = {
       id: 'cup-3',
       title: 'Pastel Party Cupcakes',
       description: 'Mixed color cupcakes for birthdays and baby showers.',
-      image: '/images/cakes/cake-4.svg',
+      image: '/images/cakes/cake-4.jpg',
       price: '$44',
       size: '12 pack'
     }
@@ -167,7 +167,7 @@ export const cakeSamplesByCategory = {
       id: 'choco-2',
       title: 'Chocolate Truffle Cake',
       description: 'Dense chocolate sponge with truffle cream center.',
-      image: '/images/cakes/cake-5.svg',
+      image: '/images/cakes/cake-5.jpg',
       price: '$89',
       size: '10 inch'
     },
@@ -201,7 +201,7 @@ export const cakeSamplesByCategory = {
       id: 'fruit-3',
       title: 'Citrus Garden Cake',
       description: 'Lemon and orange notes with fresh cream finish.',
-      image: '/images/cakes/cake-6.svg',
+      image: '/images/cakes/cake-6.jpg',
       price: '$76',
       size: '8 inch'
     }
@@ -219,7 +219,7 @@ export const cakeSamplesByCategory = {
       id: 'custom-2',
       title: 'Branded Event Cake',
       description: 'Personal or business branding details with fondant finish.',
-      image: '/images/cakes/cake-7.svg',
+      image: '/images/cakes/cake-7.jpg',
       price: '$135',
       size: '10 inch'
     },
@@ -245,7 +245,7 @@ export const cakeSamplesByCategory = {
       id: 'special-2',
       title: 'Graduation Celebration Cake',
       description: 'Bold celebration cake with custom year and message.',
-      image: '/images/cakes/cake-8.svg',
+      image: '/images/cakes/cake-8.jpg',
       price: '$96',
       size: '10 inch'
     },
