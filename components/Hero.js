@@ -23,7 +23,7 @@ export default function Hero() {
 
   return (
     <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2 md:p-10 h-[calc(100vh-8rem)] overflow-hidden">
-      <div className="flex flex-col justify-center fade-in-up">
+      <div className="flex flex-col justify-center fade-in-up order-2 md:order-1">
         <p className="text-sm font-semibold tracking-wide text-rose-500 uppercase">
           Welcome to Fairy Cakes
         </p>
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
 
       {/* Slideshow */}
-      <div className="relative h-full min-h-[250px] overflow-hidden shadow-lg rounded-2xl fade-in-up stagger-2">
+      <div className="relative h-full min-h-[250px] overflow-hidden shadow-lg rounded-2xl fade-in-up stagger-2 order-1 md:order-2">
         {slides.map((slide, index) => (
           <div
             key={slide.src}
@@ -62,9 +62,9 @@ export default function Hero() {
 
         {/* Dot indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-          {slides.map((_, index) => (
+          {slides.map((slide, index) => (
             <button
-              key={index}
+              key={slide.src}
               type="button"
               onClick={() => setCurrent(index)}
               className={`h-2 rounded-full transition-all duration-500 ${
