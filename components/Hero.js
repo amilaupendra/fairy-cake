@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2 md:p-10">
+    <section className="grid items-center gap-8 p-6 shadow-lg rounded-2xl bg-gradient-to-r from-pink-100 via-rose-50 to-pink-50 md:grid-cols-2 md:p-10 max-h-screen overflow-hidden">
       <div className="fade-in-up">
         <p className="text-sm font-semibold tracking-wide text-rose-500 uppercase">
           Welcome to Fairy Cakes
