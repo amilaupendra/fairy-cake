@@ -35,7 +35,7 @@ export default function Hero() {
           and all special occasions.
         </p>
         <Link
-          href="/order"
+          href="/menu"
           className="inline-flex px-6 py-3 mt-6 font-semibold text-white transition-all duration-300 bg-rose-500 rounded-full hover:scale-105 hover:bg-rose-600 self-start"
         >
           Order a Cake
