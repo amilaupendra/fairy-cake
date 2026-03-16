@@ -142,7 +142,7 @@ export default function GalleryPage() {
     <div className="space-y-8">
       {/* Header */}
       <section className="section-card text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-amber-500">Happy Customers</p>
+        <p className="text-sm font-semibold uppercase tracking-widest text-rose-400">Happy Customers</p>
         <h1 className="mt-1 text-4xl font-bold text-rose-700">Our Customer Gallery</h1>
         <p className="mx-auto mt-3 max-w-2xl text-stone-600 dark:text-stone-300">
           Real moments, real smiles — see how Fairy Cakes has made celebrations extra special for our wonderful customers.

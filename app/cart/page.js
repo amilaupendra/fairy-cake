@@ -17,7 +17,7 @@ export default function CartPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Your Cart</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-rose-400">Your Cart</p>
         <h1 className="text-4xl font-bold">Selected Cakes</h1>
         <p className="mt-3 text-stone-700 dark:text-stone-200">Review your cake selections before proceeding to order.</p>
       </section>

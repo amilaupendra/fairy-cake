@@ -44,7 +44,7 @@ export default function HomePage() {
       <section className="section-card">
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Featured Cakes</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-rose-400">Featured Cakes</p>
             <h2 className="text-3xl font-bold">Fresh Favorites from Our Bakery</h2>
           </div>
           <Link href="/menu" className="text-sm font-semibold text-rose-500 hover:text-rose-600">
@@ -85,7 +85,7 @@ export default function HomePage() {
       <section>
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Gallery Preview</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-rose-400">Gallery Preview</p>
             <h2 className="text-3xl font-bold">Handmade Beauty in Every Slice</h2>
           </div>
           <Link href="/gallery" className="text-sm font-semibold text-rose-500 hover:text-rose-600">

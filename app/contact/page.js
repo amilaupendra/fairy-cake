@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <div className="space-y-6">
       <section className="section-card">
-        <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">Contact Us</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-rose-400">Contact Us</p>
         <h1 className="text-4xl font-bold">We Would Love to Hear From You</h1>
         <p className="mt-3 text-stone-700 dark:text-stone-200">
           Reach out for custom cake requests, event planning, and pickup or delivery inquiries.

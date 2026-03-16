@@ -12,7 +12,7 @@ export default function AboutPage() {
     <div className="space-y-8">
       <section className="section-card grid items-center gap-6 md:grid-cols-2">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-amber-500">About Fairy Cakes</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-rose-400">About Fairy Cakes</p>
           <h1 className="text-4xl font-bold">Handmade Cakes for Every Sweet Moment.</h1>
           <p className="mt-4 text-stone-700 dark:text-stone-200">
             Fairy Cakes is a warm mom-and-pop style bakery based in Perth, Western Australia. We create cakes with
