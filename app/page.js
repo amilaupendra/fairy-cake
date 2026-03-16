@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Hero from '@/components/Hero';
-import CategoryCard from '@/components/CategoryCard';
+import CategorySlider from '@/components/CategorySlider';
 import CakeCard from '@/components/CakeCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import testimonials from '@/data/testimonials';
@@ -63,11 +63,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-wide text-rose-500">Cake Categories</p>
           <h2 className="text-3xl font-bold">Something Sweet for Every Occasion</h2>
         </div>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {categories.map((category) => (
-            <CategoryCard key={category.title} category={category} />
-          ))}
-        </div>
+        <CategorySlider categories={categories} />
       </section>
 
       <section className="section-card">
