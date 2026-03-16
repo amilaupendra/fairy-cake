@@ -64,8 +64,8 @@ export default function HomePage() {
 
       <section className="section-card">
         <div className="mb-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-rose-500">Happy Customers</p>
-          <h2 className="text-3xl font-bold">Testimonials</h2>
+          <p className="text-sm font-semibold uppercase tracking-wide text-rose-400">Happy Customers</p>
+          <h2 className="text-3xl font-bold">Customer Reviews</h2>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.slice(0, 3).map((testimonial) => (
