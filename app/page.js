@@ -5,13 +5,9 @@ import CategorySlider from '@/components/CategorySlider';
 import CakeCard from '@/components/CakeCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import testimonials from '@/data/testimonials';
+import { menuCategories } from '@/data/menuCatalog';
 
-const categories = [
-  { title: 'Birthday Cakes', image: '/images/cakes/cake-1.jpg', href: '/menu' },
-  { title: 'Wedding Cakes', image: '/images/cakes/cake-2.jpg', href: '/menu' },
-  { title: 'Cupcakes', image: '/images/cakes/cake-3.jpg', href: '/menu' },
-  { title: 'Custom Design Cakes', image: '/images/cakes/cake-4.jpg', href: '/menu' }
-];
+const categories = menuCategories.map((c) => ({ ...c, href: `/menu/${c.slug}` }));
 
 const featured = [
   {
